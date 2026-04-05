@@ -24,7 +24,43 @@
       position:sticky;
       top:0;
     }
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  min-height: 80vh;
+}
 
+.hero-text {
+  max-width: 50%;
+  color: white;
+}
+
+.hero-text span {
+  color: #38bdf8;
+}
+
+.hero-img img {
+  width: 400px;
+  max-width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-img {
+    margin-top: 20px;
+  }
+}
     header h1 { color:#38bdf8; }
 
     nav a {
@@ -174,10 +210,16 @@
   </nav>
 </header>
 
-<section class="hero" id="home">
-  <h2>Hello, I'm <span>Irfan Ali</span></h2>
-  <p>A passionate Web Developer building modern websites.</p>
-  <a href="#projects" class="btn">View My Work</a>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hello, I'm <span>Irfan Ali</span></h1>
+    <p>A passionate Web Developer building modern websites.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+
+  <div class="hero-img">
+    <img src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" alt="developer">
+  </div>
 </section>
 <section class="services">
   <div class="service-box">
